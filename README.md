@@ -2,7 +2,7 @@
 
 **System Vital** is a premium, all-in-one hardware diagnostic and optimization suite built with PySide6. It combines deep hardware detection, real-time monitoring, AI-powered insights, and a comprehensive utility hub to keep your Windows system running at peak performance.
 
-![Dashboard](docs/screenshots/Dashboard.png)
+![Dashboard](docs/Screenshots/Dashboard.png)
 
 ## 🚀 Features
 
@@ -52,15 +52,15 @@ Monitor live network traffic, ping, and connection stability. Includes tools for
 
 | Dashboard | System Health |
 | :---: | :---: |
-| ![Dashboard](docs/screenshots/Dashboard.png) | ![System Health](docs/screenshots/System%20Health.png) |
+| ![Dashboard](docs/Screenshots/Dashboard.png) | ![System Health](docs/Screenshots/System%20Health.png) |
 
 | Utilities Hub | AI Chat Assistant |
 | :---: | :---: |
-| ![Utilities](docs/screenshots/Utilities.png) | ![AI Chat](docs/screenshots/AI%20Chat.png) |
+| ![Utilities](docs/Screenshots/Utilities.png) | ![AI Chat](docs/Screenshots/AI%20Chat.png) |
 
 | Benchmarking | Network Monitoring |
 | :---: | :---: |
-| ![Benchmark result](docs/screenshots/Benchmark%20result.png) | ![Network Monitering](docs/screenshots/Network%20Monitering.png) |
+| ![Benchmark result](docs/Screenshots/Benchmark%20result.png) | ![Network Monitering](docs/Screenshots/Network%20Monitering.png) |
 
 ## ⚙️ Installation
 
