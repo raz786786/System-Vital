@@ -1,0 +1,128 @@
+{
+  "_comment": "Real-world reference scores for score normalization.",
+  "_updated": "2024-12",
+  "_scale":   "0-100000 (our internal scale)",
+
+  "CPU": {
+    "tiers": {
+      "Legacy":     {"min": 0,     "max": 15000,  "examples": ["Core 2 Duo", "Phenom II"]},
+      "Entry":      {"min": 15000, "max": 30000,  "examples": ["i3-10100", "Ryzen 3 3300X"]},
+      "Mid":        {"min": 30000, "max": 55000,  "examples": ["i5-12600K", "Ryzen 5 7600X"]},
+      "High":       {"min": 55000, "max": 75000,  "examples": ["i7-14700K", "Ryzen 7 7800X3D"]},
+      "Flagship":   {"min": 75000, "max": 100000, "examples": ["i9-14900KS", "Ryzen 9 7950X"]}
+    },
+    "reference_hardware": {
+      "Intel Core i9-14900KS":  {"score": 96000, "single": 88000, "multi": 96000},
+      "Intel Core i9-13900K":   {"score": 92000, "single": 85000, "multi": 92000},
+      "Intel Core i7-14700K":   {"score": 82000, "single": 80000, "multi": 88000},
+      "Intel Core i7-13700K":   {"score": 79000, "single": 78000, "multi": 85000},
+      "Intel Core i5-14600K":   {"score": 68000, "single": 75000, "multi": 72000},
+      "Intel Core i5-12600K":   {"score": 62000, "single": 72000, "multi": 65000},
+      "Intel Core i3-13100":    {"score": 38000, "single": 68000, "multi": 40000},
+      "AMD Ryzen 9 7950X":      {"score": 95000, "single": 82000, "multi": 95000},
+      "AMD Ryzen 9 7900X":      {"score": 87000, "single": 80000, "multi": 88000},
+      "AMD Ryzen 7 7800X3D":    {"score": 78000, "single": 79000, "multi": 75000},
+      "AMD Ryzen 7 7700X":      {"score": 72000, "single": 78000, "multi": 70000},
+      "AMD Ryzen 5 7600X":      {"score": 62000, "single": 76000, "multi": 60000},
+      "AMD Ryzen 5 5600X":      {"score": 52000, "single": 68000, "multi": 50000},
+      "AMD Ryzen 3 3300X":      {"score": 28000, "single": 55000, "multi": 28000}
+    },
+    "grade_thresholds": {"S": 85000, "A": 70000, "B": 55000, "C": 40000, "D": 25000}
+  },
+
+  "GPU": {
+    "tiers": {
+      "Legacy":     {"min": 0,     "max": 15000,  "examples": ["GTX 1050", "RX 580"]},
+      "Entry":      {"min": 15000, "max": 30000,  "examples": ["GTX 1660 Super", "RX 5600 XT"]},
+      "Mid":        {"min": 30000, "max": 55000,  "examples": ["RTX 3060 Ti", "RX 6700 XT"]},
+      "High":       {"min": 55000, "max": 75000,  "examples": ["RTX 3080", "RX 6900 XT"]},
+      "Flagship":   {"min": 75000, "max": 100000, "examples": ["RTX 4090", "RX 7900 XTX"]}
+    },
+    "reference_hardware": {
+      "NVIDIA RTX 4090":        {"score": 98000, "vram_gb": 24},
+      "NVIDIA RTX 4080":        {"score": 88000, "vram_gb": 16},
+      "NVIDIA RTX 4070 Ti":     {"score": 78000, "vram_gb": 12},
+      "NVIDIA RTX 4070":        {"score": 68000, "vram_gb": 12},
+      "NVIDIA RTX 3080 Ti":     {"score": 72000, "vram_gb": 12},
+      "NVIDIA RTX 3080":        {"score": 65000, "vram_gb": 10},
+      "NVIDIA RTX 3070":        {"score": 57000, "vram_gb": 8},
+      "NVIDIA RTX 3060 Ti":     {"score": 48000, "vram_gb": 8},
+      "NVIDIA RTX 3060":        {"score": 38000, "vram_gb": 12},
+      "NVIDIA GTX 1660 Super":  {"score": 22000, "vram_gb": 6},
+      "AMD RX 7900 XTX":        {"score": 94000, "vram_gb": 24},
+      "AMD RX 7900 XT":         {"score": 84000, "vram_gb": 20},
+      "AMD RX 6900 XT":         {"score": 70000, "vram_gb": 16},
+      "AMD RX 6700 XT":         {"score": 46000, "vram_gb": 12},
+      "AMD RX 6600":            {"score": 32000, "vram_gb": 8}
+    },
+    "grade_thresholds": {"S": 85000, "A": 70000, "B": 55000, "C": 40000, "D": 25000}
+  },
+
+  "RAM": {
+    "tiers": {
+      "Legacy":     {"min": 0,     "max": 15000,  "examples": ["DDR3-1600", "DDR4-2133"]},
+      "Entry":      {"min": 15000, "max": 30000,  "examples": ["DDR4-2666", "DDR4-3000"]},
+      "Mid":        {"min": 30000, "max": 55000,  "examples": ["DDR4-3200", "DDR4-3600"]},
+      "High":       {"min": 55000, "max": 75000,  "examples": ["DDR5-4800", "DDR5-5600"]},
+      "Flagship":   {"min": 75000, "max": 100000, "examples": ["DDR5-6400+", "DDR5-7200"]}
+    },
+    "reference_hardware": {
+      "DDR5-7200 (OC)":         {"score": 94000, "read_gbs": 110, "write_gbs": 95},
+      "DDR5-6400":              {"score": 86000, "read_gbs": 95,  "write_gbs": 82},
+      "DDR5-5600":              {"score": 76000, "read_gbs": 82,  "write_gbs": 70},
+      "DDR5-4800":              {"score": 62000, "read_gbs": 70,  "write_gbs": 58},
+      "DDR4-4000 (OC)":         {"score": 58000, "read_gbs": 55,  "write_gbs": 48},
+      "DDR4-3600":              {"score": 48000, "read_gbs": 48,  "write_gbs": 42},
+      "DDR4-3200":              {"score": 40000, "read_gbs": 42,  "write_gbs": 36},
+      "DDR4-2666":              {"score": 28000, "read_gbs": 35,  "write_gbs": 30},
+      "DDR4-2133":              {"score": 18000, "read_gbs": 28,  "write_gbs": 24},
+      "DDR3-1866":              {"score": 10000, "read_gbs": 18,  "write_gbs": 15}
+    },
+    "grade_thresholds": {"S": 85000, "A": 70000, "B": 55000, "C": 40000, "D": 25000}
+  },
+
+  "SSD": {
+    "tiers": {
+      "Legacy":     {"min": 0,     "max": 15000,  "examples": ["HDD", "USB 2.0 SSD"]},
+      "Entry":      {"min": 15000, "max": 30000,  "examples": ["SATA SSD entry", "QLC SATA"]},
+      "Mid":        {"min": 30000, "max": 55000,  "examples": ["SATA SSD", "PCIe 3.0 NVMe"]},
+      "High":       {"min": 55000, "max": 75000,  "examples": ["PCIe 4.0 NVMe", "PCIe 3.0 x4"]},
+      "Flagship":   {"min": 75000, "max": 100000, "examples": ["PCIe 5.0 NVMe", "Enterprise NVMe"]}
+    },
+    "reference_hardware": {
+      "Samsung 990 Pro (PCIe 4.0)": {"score": 88000, "seq_read": 7450, "seq_write": 6900},
+      "WD Black SN850X (PCIe 4.0)": {"score": 85000, "seq_read": 7300, "seq_write": 6600},
+      "Samsung 980 Pro (PCIe 4.0)": {"score": 80000, "seq_read": 7000, "seq_write": 5100},
+      "WD Black SN770 (PCIe 4.0)":  {"score": 72000, "seq_read": 5150, "seq_write": 4900},
+      "Samsung 970 EVO (PCIe 3.0)": {"score": 60000, "seq_read": 3500, "seq_write": 2300},
+      "WD Blue SN570 (PCIe 3.0)":   {"score": 52000, "seq_read": 3500, "seq_write": 3000},
+      "Samsung 870 EVO (SATA)":      {"score": 38000, "seq_read": 560,  "seq_write": 530},
+      "Crucial MX500 (SATA)":        {"score": 34000, "seq_read": 560,  "seq_write": 510},
+      "Kingston A400 (SATA Entry)":  {"score": 22000, "seq_read": 500,  "seq_write": 450}
+    },
+    "grade_thresholds": {"S": 85000, "A": 70000, "B": 55000, "C": 40000, "D": 25000}
+  },
+
+  "HDD": {
+    "tiers": {
+      "Legacy":     {"min": 0,     "max": 10000, "examples": ["5400 RPM SMR", "USB 2.0 HDD"]},
+      "Entry":      {"min": 10000, "max": 20000, "examples": ["5400 RPM CMR"]},
+      "Mid":        {"min": 20000, "max": 40000, "examples": ["7200 RPM desktop HDD"]},
+      "High":       {"min": 40000, "max": 60000, "examples": ["7200 RPM enterprise HDD"]},
+      "Flagship":   {"min": 60000, "max": 100000,"examples": ["10K/15K RPM SAS"]}
+    },
+    "reference_hardware": {
+      "Seagate Exos X20 (7200 RPM)":  {"score": 55000, "seq_mbs": 285},
+      "WD Gold 16TB (7200 RPM)":      {"score": 50000, "seq_mbs": 260},
+      "WD Blue 7200 RPM":             {"score": 38000, "seq_mbs": 180},
+      "Seagate Barracuda 7200":        {"score": 35000, "seq_mbs": 175},
+      "WD Green 5400 RPM (CMR)":       {"score": 20000, "seq_mbs": 130},
+      "Seagate Barracuda 5400 SMR":    {"score": 12000, "seq_mbs": 120}
+    },
+    "grade_thresholds": {"S": 60000, "A": 45000, "B": 30000, "C": 18000, "D": 10000}
+  },
+
+  "System": {
+    "grade_thresholds": {"S": 85000, "A": 70000, "B": 55000, "C": 40000, "D": 25000}
+  }
+}
